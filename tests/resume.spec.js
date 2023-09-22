@@ -30,7 +30,7 @@ test('Check Phone Number Link', async ({ page }) => {
 /* This test checks that the address is visible on the page */
 test('Check Address', async ({ page }) => {
   await page.goto(resumeURL);
-  await expect(page.locator('p:has-text("123 Main St")')).toBeVisible();
+  await expect(page.locator('address:has-text("1001 Park Street, Springfield, NJ")')).toBeVisible();
 });
 
 /* This test checks that the LinkedIn link is visible on the page */
